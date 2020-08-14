@@ -39,7 +39,7 @@ $(".my-register-validation").submit(async function () {
     is_earlybird: is_earlybird,
     like_drink: like_drink,
     location: location,
-	image : img,
+	  image : img,
   };
 
   const url = "/api/login/signup";
