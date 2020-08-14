@@ -9,7 +9,7 @@ router.post('/', async (req, res, next) => {
     try {
         
         let { userid, nickname, password, mbti, movie, music, location, is_mint, is_boumeok, is_earlybird, like_drink } = req.body;
-        console.log("this is signup.js", req)
+        console.log("this is signup.js", req.body)
         if (!userid || !mbti || !movie || !music || !location || !is_mint || !is_boumeok || !is_earlybird || !like_drink) throw Error();
 
         //todo OCR로 전송 후 값 일치 확인
